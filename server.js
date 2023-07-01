@@ -16,6 +16,15 @@ app.get('/profile',(req,res)=>{
 })
 
 
+
+app.get('/server',(req,res)=>{
+    res.json({
+        name : "Node JS",
+        port: "80",
+        msg : "Learing code pipeline"
+    })
+})
+
 app.listen(PORT,()=>{
     console.log(`Server is runing on PORT : ${PORT}`)
 })
